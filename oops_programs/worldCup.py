@@ -18,15 +18,7 @@ class wordCup(object):
         return True if (len(self.players) > len(other.players)) else False
     
     def __add__(self, other):
-        allplayers = list()
         return list(self.players + other.players)
-        """
-        for player in self.players:
-            allplayers.append(player)
-        for player in other.players:
-            allplayers.append(player)
-        return allplayers
-        """
 
 india = wordCup('India', 'dhoni','virat', 'Sharma', 'kapil', 'raju')
 australia = wordCup('Australia', 'Lee','Law', 'lim', 'tim')
